@@ -76,3 +76,67 @@ button {
         flex-direction: column;
     }
 }
+
+.site-header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 24px;
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.brand {
+  color: brown;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: brown;
+  font-weight: 700;
+}
+
+nav a:focus-visible,
+.skip-link:focus-visible {
+  outline: 3px solid orange;
+  outline-offset: 4px;
+}
+
+.skip-link {
+  position: absolute;
+  left: 10px;
+  top: -50px;
+  padding: 10px 14px;
+  background: white;
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 10px;
+}
+
+.site-footer {
+  margin-top: 32px;
+  padding: 24px;
+  background: brown;
+  color: white;
+  text-align: center;
+}
+
+.profile-image {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 18px;
+}
